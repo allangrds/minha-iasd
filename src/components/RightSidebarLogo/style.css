@@ -1,0 +1,28 @@
+.seventh-day {
+  height: 100%;
+  background-color: #269E9A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.seventh-day-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+}
+
+.seventh-day-3 {
+  width: 100%;
+  position: relative;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 120px;
+}
