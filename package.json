@@ -1,0 +1,49 @@
+{
+  "name": "minha-iasd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html -p 3000",
+    "build": "parcel build src/index.html && cp robots.txt ./dist",
+    "lint": "eslint --config .eslintrc 'src/**/*.js' && npm run stylelint",
+    "stylelint": "stylelint './src/**/*.css'",
+    "commit": "cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allangrds/minha-iasd.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allangrds/minha-iasd/issues"
+  },
+  "homepage": "https://github.com/allangrds/minha-iasd#readme",
+  "devDependencies": {
+    "parcel-bundler": "1.12.4",
+    "parcel-plugin-svelte": "4.0.4",
+    "svelte": "3.12.1",
+    "autoprefixer": "9.8.6",
+    "commitizen": "4.2.2",
+    "cssnano": "4.1.10",
+    "cz": "1.8.2",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.13.0",
+    "eslint-config-pagarme-base": "3.0.0",
+    "eslint-plugin-import": "2.22.1",
+    "postcss": "8.1.7",
+    "postcss-import": "12.0.0",
+    "postcss-modules": "3.2.2",
+    "postcss-nested": "4.0.0",
+    "prettier-eslint": "11.0.0",
+    "stylelint": "13.7.2",
+    "stylelint-config-standard": "20.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
