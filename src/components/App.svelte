@@ -23,8 +23,6 @@
 </svelte:head>
 
 <div class="appRoot">
-
   <h1>{appName}</h1>
   <Hello {name} />
-
 </div>

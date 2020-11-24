@@ -51,7 +51,7 @@
     "prettier-eslint": "11.0.0",
     "stylelint": "13.7.2",
     "stylelint-config-standard": "20.0.0",
-    "svelte": "3.29.7",
+    "svelte": "3.12.1",
     "svelte-loader": "2.13.6"
   },
   "config": {
