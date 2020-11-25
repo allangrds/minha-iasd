@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans/NotoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  src: url("../fonts/NotoSerif/NotoSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AdventSans";
+  src: url("../fonts/AdventSans-Logo.otf") format("opentype");
+  font-weight: normal;
+}

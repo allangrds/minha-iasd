@@ -1,5 +1,6 @@
 <script>
   import Hello from '~/components/Hello.svelte';
+  import TrueHome from '~/components/TrueHome.svelte';
   // A component prop
   export let appName = 'svelte-template-parcel';
   // Not exported so private to this instance. Declarec with 'const' so it's readonly
@@ -23,6 +24,7 @@
 </svelte:head>
 
 <div class="appRoot">
-  <h1>{appName}</h1>
-  <Hello {name} />
+  <!-- <h1>{appName}</h1>
+  <Hello {name} /> -->
+  <TrueHome />
 </div>

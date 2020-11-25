@@ -1,6 +1,6 @@
 .seventh-day {
   height: 100%;
-  background-color: #269E9A;
+  background-color: var(--primary);
   display: flex;
   flex-direction: column;
   align-items: center;
