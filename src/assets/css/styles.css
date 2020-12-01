@@ -1,6 +1,3 @@
 @import "./generic/index.css";
-
-:root {
-  --blue: #1e90ff;
-  --white: #ffffff;
-}
+@import "./base.css";
+@import "./settings/index.css";
