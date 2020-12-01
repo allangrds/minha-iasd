@@ -1,5 +1,4 @@
 .content {
-  width: 100%;
+  width: calc(100vw/7 * 6 - 0.01px);
   background-color: #fff;
-  z-index: 1;
 }
