@@ -1,0 +1,9 @@
+.main > .container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1920px;
+  padding: 30px 40px;
+  width: 100%;
+}
