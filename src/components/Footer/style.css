@@ -1,0 +1,66 @@
+.footer {
+  padding: 30px 40px;
+  width: 100%;
+  border-top: 1px solid #E5E5E5;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media {
+  min-width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.asd {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.iasd-logo {
+  margin-right: 40px;
+}
+
+.item {
+  display: inline;
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+.link {
+  font-family: 'NotoSans';
+  color: #717171;
+}
+
+@media only screen and (max-width: 775px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .asd {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .iasd-logo {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .item {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+}

@@ -8,6 +8,7 @@
   import Main from '~/components/Main/index.svelte'
   import Container from '~/components/Container/index.svelte'
   import Box from '~/components/Box/index.svelte'
+  import Footer from '~/components/Footer/index.svelte'
 </script>
 
 <Wrapper>
@@ -52,6 +53,7 @@
           </Box>
         </div>
       </Container>
+      <Footer />
     </Main>
   </Content>
   <RightSidebarLogo />
