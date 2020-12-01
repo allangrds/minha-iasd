@@ -6,3 +6,46 @@
   background-size: cover;
   background-position: center center;
 }
+
+.cult-time {
+  max-width: 900px;
+  display: flex;
+
+  @media only screen and (max-width: 925px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 925px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.cult-time-title {
+  font-family: "NotoSerif";
+  color: #052252;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.cult-time-day {
+  font-family: "NotoSans";
+  color: #052252;
+  font-size: 1.3em;
+}
+
+.cult-time-description {
+  font-family: "NotoSans";
+  color: #717171;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.cult-time-box {
+  @media only screen and (max-width: 925px) {
+    min-width: 100% !important;
+    margin-bottom: 20px;
+  }
+}

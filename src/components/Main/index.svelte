@@ -1,8 +1,7 @@
 <script>
-  import './style.css'
+  import style from './style.css'
 </script>
 
-
-<main class="main">
+<main class={style.main}>
   <slot></slot>
 </main>
