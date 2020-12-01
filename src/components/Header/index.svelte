@@ -1,57 +1,57 @@
 <script>
-  import './style.css'
+  import style from './style.css'
 </script>
 
 
-<header class="header">
-  <div class="container">
+<header class={style.header}>
+  <div class={style.container}>
     <div>
-      <h1 class="church-name">
+      <h1 class={style['church-name']}>
         Igreja Adventista do Sétimo Dia
       </h1>
-      <h2 class="church-name-sub">
+      <h2 class={style['church-name-sub']}>
         Belém
       </h2>
     </div>
-    <div class="mobile-navigation">
-      <div class="menu">
+    <div class={style['mobile-navigation']}>
+      <div class={style.menu}>
         <label
-          class="icon"
+          class={style.icon}
           for="toggle"
         >
           &#9776;
         </label>
         <input
-          class="input"
+          class={style.input}
           type="checkbox"
           id="toggle"
         />
-        <span class="text">
+        <span class={style.text}>
           Menu
         </span>
-        <nav class="navigation">
-          <ul class="institutional-list">
-            <li class="item">
+        <nav class={style.navigation}>
+          <ul class={style['institutional-list']}>
+            <li class={style.item}>
               <a
-                class="link"
+                class={style.link}
                 href="https://www.adventistas.org/pt/institucional/"
                 target="_blank"
               >
                 institucional
               </a>
             </li>
-            <li class="item">
+            <li class={style.item}>
               <a
-                class="link"
+                class={style.link}
                 href="https://noticias.adventistas.org/pt/"
                 target="_blank"
               >
                 notícias
               </a>
             </li>
-            <li class="item">
+            <li class={style.item}>
               <a
-                class="link"
+                class={style.link}
                 href="https://videos.adventistas.org/pt/"
                 target="_blank"
               >
@@ -59,34 +59,34 @@
               </a>
             </li>
           </ul>
-          <ul class="site-list">
-            <li class="item">
+          <ul class={style['site-list']}>
+            <li class={style.item}>
               <a
-                class="link"
+                class={style.link}
                 href="#"
               >
                 início
               </a>
             </li>
-            <li class="item">
+            <li class={style.item}>
               <a
-                class="link"
+                class={style.link}
                 href="#"
               >
                 ao vivo
               </a>
             </li>
-            <li class="item">
+            <li class={style.item}>
               <a
-                class="link"
+                class={style.link}
                 href="#"
               >
                 onde estamos
               </a>
             </li>
-            <li class="item">
+            <li class={style.item}>
               <a
-                class="link"
+                class={style.link}
                 href="#"
               >
                 fale conosco
@@ -96,30 +96,30 @@
         </nav>
       </div>
     </div>
-    <div class="desktop-navigation">
-      <nav class="institutional-navigation">
-        <ul class="list">
-          <li class="item">
+    <div class={style['desktop-navigation']}>
+      <nav class={style['institutional-navigation']}>
+        <ul class={style.list}>
+          <li class={style.item}>
             <a
-              class="link"
+              class={style.link}
               href="https://www.adventistas.org/pt/institucional/"
               target="_blank"
             >
               institucional
             </a>
           </li>
-          <li class="item">
+          <li class={style.item}>
             <a
-              class="link"
+              class={style.link}
               href="https://noticias.adventistas.org/pt/"
               target="_blank"
             >
               notícias
             </a>
           </li>
-          <li class="item">
+          <li class={style.item}>
             <a
-              class="link"
+              class={style.link}
               href="https://videos.adventistas.org/pt/"
               target="_blank"
             >
@@ -128,25 +128,25 @@
           </li>
         </ul>
       </nav>
-      <nav class="site-navigation">
-        <ul class="list">
-          <li class="item">
-            <a href="#" class="link">
+      <nav class={style['site-navigation']}>
+        <ul class={style['list']}>
+          <li class={style['item']}>
+            <a href="#" class={style.link}>
               Início
             </a>
           </li>
-          <li class="item">
-            <a href="#" class="link">
+          <li class={style.item}>
+            <a href="#" class={style.link}>
               Ao vivo
             </a>
           </li>
-          <li class="item">
-            <a href="#" class="link">
+          <li class={style.item}>
+            <a href="#" class={style.link}>
               Onde estamos
             </a>
           </li>
-          <li class="item">
-            <a href="#" class="link">
+          <li class={style.item}>
+            <a href="#" class={style.link}>
               Fale conosco
             </a>
           </li>

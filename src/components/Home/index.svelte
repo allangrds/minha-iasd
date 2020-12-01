@@ -1,5 +1,5 @@
 <script>
-  import './style.css'
+  import style from './style.css'
 
   import RightSidebarLogo from '~/components/RightSidebarLogo/index.svelte'
   import Header from '~/components/Header/index.svelte'
@@ -13,7 +13,7 @@
   <Content>
     <Header />
     <Main>
-      <div class="header-img"></div>
+      <div class={style['header-img']}></div>
       <Container>
         <p>asdasdasdasdasdasdsa</p>
       </Container>

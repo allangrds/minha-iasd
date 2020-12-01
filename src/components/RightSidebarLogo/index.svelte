@@ -1,10 +1,10 @@
 <script>
   import Logo from '~/assets/images/logo_white_simple.svg'
-  import './style.css'
+  import style from './style.css'
 </script>
 
-<aside class="seventh-day">
-  <div class="seventh-day-2">
-    <img class="logo" src={Logo} alt="Igreja Adventista do Sétimo Dia" />
+<aside class={style['seventh-day']}>
+  <div class={style['seventh-day-2']}>
+    <img class={style.logo} src={Logo} alt="Igreja Adventista do Sétimo Dia" />
   </div>
 </aside>

@@ -1,7 +1,7 @@
 <script>
-  import './style.css'
+  import style from './style.css'
 </script>
 
-<div class="wrapper">
+<div class={style.wrapper}>
   <slot></slot>
 </div>
