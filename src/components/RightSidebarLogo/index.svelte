@@ -5,8 +5,6 @@
 
 <aside class="seventh-day">
   <div class="seventh-day-2">
-    <div class="seventh-day-3">
-      <img class="logo" src={Logo} alt="Igreja Adventista do Sétimo Dia" />
-    </div>
+    <img class="logo" src={Logo} alt="Igreja Adventista do Sétimo Dia" />
   </div>
 </aside>

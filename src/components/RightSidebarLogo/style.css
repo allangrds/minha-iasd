@@ -1,6 +1,5 @@
 .seventh-day {
-  height: 100%;
-  background-color: var(--primary);
+  width: calc(100vw/7 * 1 - 0.01px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,18 +7,16 @@
 }
 
 .seventh-day-2 {
+  width: inherit;
+  background-color: var(--primary);
+  height: 100%;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
-}
-
-.seventh-day-3 {
-  width: 100%;
-  position: relative;
   padding-top: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .logo {
