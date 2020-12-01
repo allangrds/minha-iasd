@@ -23,7 +23,7 @@
 }
 
 .cult-time-title {
-  font-family: "NotoSerif";
+  font-family: "NotoSerif", serif;
   color: var(--color-secondary);
   font-size: 2em;
   font-weight: 500;
@@ -31,13 +31,13 @@
 }
 
 .cult-time-day {
-  font-family: "NotoSans";
+  font-family: "NotoSans", serif;
   color: var(--color-secondary);
   font-size: 1.3em;
 }
 
 .cult-time-description {
-  font-family: "NotoSans";
+  font-family: "NotoSans", serif;
   color: var(--color-third);
   font-size: 1.1em;
   margin-top: 10px;

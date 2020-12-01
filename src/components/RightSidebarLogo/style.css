@@ -1,5 +1,5 @@
 .seventh-day {
-  width: calc(100vw/7 * 1 - 0.01px);
+  width: calc(100vw / 7 * 1 - 0.01px);
   display: flex;
   flex-direction: column;
   align-items: center;

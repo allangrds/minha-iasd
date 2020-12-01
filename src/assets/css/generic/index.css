@@ -140,7 +140,8 @@ a {
   text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
   padding: 0;
   margin: 0;
 }

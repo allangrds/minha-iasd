@@ -1,7 +1,7 @@
 .footer {
   padding: 30px 40px;
   width: 100%;
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
   margin-bottom: 30px;
   margin-top: 30px;
 }
@@ -37,7 +37,7 @@
 }
 
 .link {
-  font-family: 'NotoSans';
+  font-family: 'NotoSans', serif;
   color: var(--color-third);
 }
 
@@ -62,5 +62,4 @@
     margin-right: 0;
     margin-bottom: 10px;
   }
-
 }
