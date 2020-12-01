@@ -73,6 +73,10 @@
 }
 
 @media only screen and (max-width: 727px) {
+  .church-name {
+    text-align: center;
+  }
+
   .desktop-navigation {
     display: none;
   }
