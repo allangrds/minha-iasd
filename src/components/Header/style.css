@@ -21,13 +21,13 @@
   font-weight: 300;
   font-size: 1.7em;
   line-height: 40px;
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .church-name-sub {
   font-family: "NotoSans";
   font-size: 1em;
-  color: var(--primary);
+  color: var(--color-primary);
   text-transform: uppercase;
   margin-top: 16px;
 }
@@ -49,7 +49,7 @@
 .mobile-navigation .icon {
   cursor: pointer;
   font-size: 1.5em;
-  color: #717171;
+  color: var(--color-third);
 }
 
 .mobile-navigation .input {
@@ -59,7 +59,7 @@
 .mobile-navigation .text {
   font-family: "NotoSans";
   text-transform: uppercase;
-  color: #717171;
+  color: var(--color-third);
   margin-left: 7px;
 }
 
@@ -110,7 +110,7 @@
   .mobile-navigation .navigation .institutional-list .link,
   .mobile-navigation .navigation .site-list .link {
     font-family: "NotoSans";
-    color: #717171;
+    color: var(--color-third);
     text-transform: lowercase;
   }
 
@@ -155,7 +155,7 @@
 
 .institutional-navigation .link {
   font-family: "NotoSans";
-  color: #717171;
+  color: var(--color-third);
   text-transform: lowercase;
 }
 
@@ -172,7 +172,7 @@
 
 .site-navigation .link {
   font-family: "NotoSerif";
-  color: var(--primary);
+  color: var(--color-primary);
   text-transform: capitalize;
   font-size: 1.2em;
 }

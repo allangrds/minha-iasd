@@ -8,7 +8,7 @@
 
 .seventh-day-2 {
   width: inherit;
-  background-color: var(--primary);
+  background-color: var(--color-primary);
   height: 100%;
   position: fixed;
   display: flex;

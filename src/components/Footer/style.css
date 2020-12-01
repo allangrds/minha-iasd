@@ -38,7 +38,7 @@
 
 .link {
   font-family: 'NotoSans';
-  color: #717171;
+  color: var(--color-third);
 }
 
 @media only screen and (max-width: 775px) {
