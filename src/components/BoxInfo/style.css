@@ -2,6 +2,7 @@
   font-family: "NotoSans", serif;
   color: var(--color-secondary);
   font-size: 1.3em;
+  text-align: center;
 }
 
 .description {
@@ -9,4 +10,6 @@
   color: var(--color-third);
   font-size: 1.1em;
   margin-top: 10px;
+  overflow-wrap: break-word;
+  text-align: center;
 }
