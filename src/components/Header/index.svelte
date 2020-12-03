@@ -1,4 +1,6 @@
 <script>
+  import { Link } from 'svelte-routing'
+
   import style from './style.css'
 </script>
 
@@ -61,36 +63,24 @@
           </ul>
           <ul class={style['site-list']}>
             <li class={style.item}>
-              <a
-                class={style.link}
-                href="#"
-              >
+              <Link to="/" class={style.link}>
                 início
-              </a>
+              </Link>
             </li>
             <li class={style.item}>
-              <a
-                class={style.link}
-                href="#"
-              >
+              <Link to="/ao-vivo" class={style.link}>
                 ao vivo
-              </a>
+              </Link>
             </li>
             <li class={style.item}>
-              <a
-                class={style.link}
-                href="#"
-              >
+              <Link to="/onde-estamos" class={style.link}>
                 onde estamos
-              </a>
+              </Link>
             </li>
             <li class={style.item}>
-              <a
-                class={style.link}
-                href="#"
-              >
+              <Link to="/fale-conosco" class={style.link}>
                 fale conosco
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -131,24 +121,24 @@
       <nav class={style['site-navigation']}>
         <ul class={style['list']}>
           <li class={style['item']}>
-            <a href="#" class={style.link}>
+            <Link to="/" class={style.link}>
               Início
-            </a>
+            </Link>
           </li>
           <li class={style.item}>
-            <a href="#" class={style.link}>
+            <Link to="/ao-vivo" class={style.link}>
               Ao vivo
-            </a>
+            </Link>
           </li>
           <li class={style.item}>
-            <a href="#" class={style.link}>
+            <Link to="/onde-estamos" class={style.link}>
               Onde estamos
-            </a>
+            </Link>
           </li>
           <li class={style.item}>
-            <a href="#" class={style.link}>
+            <Link to="/fale-conosco" class={style.link}>
               Fale conosco
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

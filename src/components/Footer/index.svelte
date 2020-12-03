@@ -1,4 +1,6 @@
 <script>
+  import { Link } from 'svelte-routing'
+
   import style from './style.css'
 
   import FacebookIcon from '~/assets/images/facebook.svg'
@@ -14,24 +16,24 @@
       <nav>
         <ul>
           <li class={style.item}>
-            <a href="#" class={style.link}>
+            <Link to="/" class={style.link}>
               início
-            </a>
+            </Link>
           </li>
           <li class={style.item}>
-            <a href="#" class={style.link}>
+            <Link to="/ao-vivo" class={style.link}>
               ao vivo
-            </a>
+            </Link>
           </li>
           <li class={style.item}>
-            <a href="#" class={style.link}>
+            <Link to="/onde-estamos" class={style.link}>
               onde estamos
-            </a>
+            </Link>
           </li>
           <li class={style.item}>
-            <a href="#" class={style.link}>
+            <Link to="/fale-conosco" class={style.link}>
               fale conosco
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
