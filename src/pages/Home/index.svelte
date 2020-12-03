@@ -10,6 +10,7 @@
   import Box from '~/components/Box/index.svelte'
   import Footer from '~/components/Footer/index.svelte'
   import Title from '~/components/Title/index.svelte'
+  import BoxInfo from '~/components/BoxInfo/index.svelte'
 </script>
 
 <Wrapper>
@@ -20,36 +21,18 @@
       <Container>
         <Title text="Horário dos cultos" />
         <div class={style['cult-time']}>
-          <Box style={style['cult-time-box']}>
-            <span class={style['cult-time-day']}>
-              Sábado
-            </span>
-            <span class={style['cult-time-description']}>
-              <time>
-                9:30
-              </time>
-            </span>
-          </Box>
-          <Box style={style['cult-time-box']}>
-            <span class={style['cult-time-day']}>
-              Domingo
-            </span>
-            <span class={style['cult-time-description']}>
-              <time>
-                18:00
-              </time>
-            </span>
-          </Box>
-          <Box style={style['cult-time-box']}>
-            <span class={style['cult-time-day']}>
-              Quarta
-            </span>
-            <span class={style['cult-time-description']}>
-              <time>
-                19:00
-              </time>
-            </span>
-          </Box>
+          <BoxInfo
+            title="Sábado"
+            description="9:30"
+          />
+          <BoxInfo
+            title="Domingo"
+            description="18:00"
+          />
+          <BoxInfo
+            title="Quarta"
+            description="19:00"
+          />
         </div>
       </Container>
       <Footer />

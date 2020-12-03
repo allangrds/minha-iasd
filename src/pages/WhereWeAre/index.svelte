@@ -9,6 +9,7 @@
   import Container from '~/components/Container/index.svelte'
   import Footer from '~/components/Footer/index.svelte'
   import Title from '~/components/Title/index.svelte'
+  import BoxInfo from '~/components/BoxInfo/index.svelte'
 </script>
 
 <Wrapper>
@@ -18,6 +19,10 @@
       <div class={style['header-img']} />
       <Container>
         <Title text="onde estamos" />
+        <BoxInfo
+          title="Endereço"
+          description="Rua Martim Affonso, 152 - Belenzinho, São Paulo - SP, 03057-050"
+        />
         <iframe
           title="localização da igreja"
           width="100%"

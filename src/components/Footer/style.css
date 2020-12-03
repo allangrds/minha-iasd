@@ -20,7 +20,7 @@
   justify-content: space-between;
 }
 
-.asd {
+.church {
   width: 100%;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
   font-size: 0.9em;
 }
 
-.link {
+.item a {
   font-family: 'NotoSans', serif;
   color: var(--color-third);
 }
@@ -46,7 +46,7 @@
     flex-direction: column;
   }
 
-  .asd {
+  .church {
     flex-direction: column;
     margin-bottom: 30px;
   }

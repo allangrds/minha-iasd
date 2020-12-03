@@ -21,23 +21,3 @@
     justify-content: space-between;
   }
 }
-
-.cult-time-day {
-  font-family: "NotoSans", serif;
-  color: var(--color-secondary);
-  font-size: 1.3em;
-}
-
-.cult-time-description {
-  font-family: "NotoSans", serif;
-  color: var(--color-third);
-  font-size: 1.1em;
-  margin-top: 10px;
-}
-
-.cult-time-box {
-  @media only screen and (max-width: 925px) {
-    min-width: 100% !important;
-    margin-bottom: 20px;
-  }
-}
