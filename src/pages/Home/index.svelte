@@ -9,6 +9,7 @@
   import Container from '~/components/Container/index.svelte'
   import Box from '~/components/Box/index.svelte'
   import Footer from '~/components/Footer/index.svelte'
+  import Title from '~/components/Title/index.svelte'
 </script>
 
 <Wrapper>
@@ -17,9 +18,7 @@
     <Main>
       <div class={style['header-img']}></div>
       <Container>
-        <h2 class={style['cult-time-title']}>
-          Horário dos cultos
-        </h2>
+        <Title text="Horário dos cultos" />
         <div class={style['cult-time']}>
           <Box style={style['cult-time-box']}>
             <span class={style['cult-time-day']}>

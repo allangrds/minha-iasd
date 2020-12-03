@@ -7,8 +7,8 @@
   import Wrapper from '~/components/Wrapper/index.svelte'
   import Main from '~/components/Main/index.svelte'
   import Container from '~/components/Container/index.svelte'
-  import Box from '~/components/Box/index.svelte'
   import Footer from '~/components/Footer/index.svelte'
+  import Title from '~/components/Title/index.svelte'
 </script>
 
 <Wrapper>
@@ -17,7 +17,7 @@
     <Main>
       <div class={style['header-img']} />
       <Container>
-        <h2 class={style['cult-time-title']}>Ao vivo</h2>
+        <Title text="ao vivo" />
         <iframe
           title="Transmissão ao vivo da igreja"
           width="100%"
