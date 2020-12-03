@@ -11,7 +11,7 @@
 
 <footer class={style.footer}>
   <div class={style.container}>
-    <section class={style.asd}>
+    <section class={style.church}>
       <img class={style['iasd-logo']} src={IasdLogoIcon} alt="Igreja Adventista do Sétimo Dia" />
       <nav>
         <ul>

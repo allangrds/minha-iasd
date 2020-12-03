@@ -9,6 +9,7 @@
   import Container from '~/components/Container/index.svelte'
   import Footer from '~/components/Footer/index.svelte'
   import Title from '~/components/Title/index.svelte'
+  import BoxInfo from '~/components/BoxInfo/index.svelte'
 </script>
 
 <Wrapper>
@@ -17,14 +18,18 @@
     <Main>
       <div class={style['header-img']} />
       <Container>
-        <Title text="ao vivo" />
+        <Title text="onde estamos" />
+        <BoxInfo
+          title="Endereço"
+          description="Rua Martim Affonso, 152 - Belenzinho, São Paulo - SP, 03057-050"
+        />
         <iframe
-          title="Transmissão ao vivo da igreja"
+          title="localização da igreja"
           width="100%"
-          height="700"
-          src="https://www.youtube.com/embed/fZ6TY0qVakc"
+          height="450"
           frameborder="0"
-          allow="autoplay; encrypted-media"
+          style="border: 0;"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJLYBZnStZzpQR75ZTAM1cIIo&key=AIzaSyCiZR35QJgK6Tsid94ZOo-TuKwDlH55Nds"
           allowfullscreen />
       </Container>
       <Footer />

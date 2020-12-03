@@ -1,11 +1,11 @@
 import { render } from '@testing-library/svelte'
 
-import Home from './index.svelte'
+import WhereWeAre from './index.svelte'
 
-describe('Home', () => {
+describe('WhereWeAre', () => {
   test('should match snapshot', () => {
     const props = {}
-    const { container } = render(Home, props)
+    const { container } = render(WhereWeAre, props)
 
     expect(container).toMatchSnapshot()
   })

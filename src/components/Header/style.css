@@ -108,7 +108,7 @@
   }
 
   .mobile-navigation .navigation .institutional-list .link,
-  .mobile-navigation .navigation .site-list .link {
+  .mobile-navigation .navigation .site-list .item a {
     font-family: "NotoSans", serif;
     color: var(--color-third);
     text-transform: lowercase;
@@ -168,7 +168,7 @@
   margin-left: 20px;
 }
 
-.site-navigation .link {
+.site-navigation .item a {
   font-family: "NotoSerif", serif;
   color: var(--color-primary);
   text-transform: capitalize;

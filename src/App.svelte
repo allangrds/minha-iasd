@@ -2,6 +2,7 @@
   import { Router, Route } from 'svelte-routing'
   import Home from '~/pages/Home/index.svelte'
   import Live from './pages/Live/index.svelte'
+  import WhereWeAre from './pages/WhereWeAre/index.svelte'
 
   export let url = ''
 </script>
@@ -13,5 +14,8 @@
   </Route>
   <Route path="/ao-vivo">
     <Live />
+  </Route>
+  <Route path="/onde-estamos">
+    <WhereWeAre />
   </Route>
  </Router>
