@@ -39,13 +39,13 @@
       </nav>
     </section>
     <section class={style['social-media']}>
-      <a href="https://pt-br.facebook.com/IASDBelemSP/" target="_blank">
+      <a href="https://pt-br.facebook.com/IASDBelemSP/" target="_blank" rel="noreferrer">
         <img src={FacebookIcon} alt="Facebook">
       </a>
-      <a href="https://www.instagram.com/iasdbelemsp/" target="_blank">
+      <a href="https://www.instagram.com/iasdbelemsp/" target="_blank" rel="noreferrer">
         <img src={InstagramIcon} alt="Instagram">
       </a>
-      <a href="https://www.youtube.com/channel/UC0RqFUeh2gCIkpNCkyPSBig" target="_blank">
+      <a href="https://www.youtube.com/channel/UC0RqFUeh2gCIkpNCkyPSBig" target="_blank" rel="noreferrer">
         <img src={YoutubeIcon} alt="Youtube">
       </a>
     </section>

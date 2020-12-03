@@ -38,6 +38,7 @@
                 class={style.link}
                 href="https://www.adventistas.org/pt/institucional/"
                 target="_blank"
+                rel="noreferrer"
               >
                 institucional
               </a>
@@ -47,6 +48,7 @@
                 class={style.link}
                 href="https://noticias.adventistas.org/pt/"
                 target="_blank"
+                rel="noreferrer"
               >
                 notícias
               </a>
@@ -56,6 +58,7 @@
                 class={style.link}
                 href="https://videos.adventistas.org/pt/"
                 target="_blank"
+                rel="noreferrer"
               >
                 vídeos
               </a>
@@ -94,6 +97,7 @@
               class={style.link}
               href="https://www.adventistas.org/pt/institucional/"
               target="_blank"
+              rel="noreferrer"
             >
               institucional
             </a>
@@ -103,6 +107,7 @@
               class={style.link}
               href="https://noticias.adventistas.org/pt/"
               target="_blank"
+              rel="noreferrer"
             >
               notícias
             </a>
@@ -112,6 +117,7 @@
               class={style.link}
               href="https://videos.adventistas.org/pt/"
               target="_blank"
+              rel="noreferrer"
             >
               vídeos
             </a>
