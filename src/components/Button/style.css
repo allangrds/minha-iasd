@@ -1,0 +1,10 @@
+.button {
+  background-color: var(--color-primary);
+  font-family: "NotoSans", serif;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  color: var(--color-white);
+}
