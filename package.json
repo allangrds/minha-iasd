@@ -87,6 +87,6 @@
     ]
   },
   "dependencies": {
-    "svelte-routing": "^1.4.2"
+    "svelte-routing": "1.4.2"
   }
 }
