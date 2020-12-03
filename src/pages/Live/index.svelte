@@ -22,7 +22,7 @@
           title="Transmissão ao vivo da igreja"
           width="100%"
           height="700"
-          src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG"
+          src="https://www.youtube.com/embed/fZ6TY0qVakc"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen />
