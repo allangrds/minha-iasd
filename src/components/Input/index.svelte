@@ -13,6 +13,7 @@
     { label }
   </label>
   <input
+    id={`id-${name}`}
     class={styles.input}
     type={type}
     name={name}

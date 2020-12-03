@@ -12,6 +12,7 @@
     { label }
   </label>
   <textarea
+    id={`id-${name}`}
     class={styles.textarea}
     name={name}
     placeholder={placeholder}

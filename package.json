@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --watchAll",
     "start": "parcel src/index.html -p 3000",
-    "build": "parcel build src/index.html && cp robots.txt ./dist && cp sitemaps.xml ./dist",
+    "build": "parcel build src/index.html && cp robots.txt ./dist",
     "lint": "eslint --config .eslintrc 'src/**/*.js' && npm run stylelint",
     "stylelint": "stylelint './src/**/*.css'",
     "commit": "cz",
