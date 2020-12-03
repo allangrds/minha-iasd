@@ -1,0 +1,16 @@
+.header-img {
+  height: 400px;
+  width: 100%;
+  background-image: url("/assets/images/home_background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cult-time-title {
+  font-family: "NotoSerif", serif;
+  color: var(--color-secondary);
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
