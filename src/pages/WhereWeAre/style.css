@@ -1,0 +1,8 @@
+.header-img {
+  height: 400px;
+  width: 100%;
+  background-image: url("/assets/images/home_background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
