@@ -7,6 +7,8 @@
   import InstagramIcon from '~/assets/images/instagram.svg'
   import YoutubeIcon from '~/assets/images/youtube.svg'
   import IasdLogoIcon from '~/assets/images/iasd-logo-oficial.svg'
+
+  import config from '~/config'
 </script>
 
 <footer class={style.footer}>
@@ -39,13 +41,13 @@
       </nav>
     </section>
     <section class={style['social-media']}>
-      <a href="https://pt-br.facebook.com/IASDBelemSP/" target="_blank" rel="noreferrer">
+      <a href="https://pt-br.facebook.com/{config.facebook_page}/" target="_blank" rel="noreferrer">
         <img src={FacebookIcon} alt="Facebook">
       </a>
-      <a href="https://www.instagram.com/iasdbelemsp/" target="_blank" rel="noreferrer">
+      <a href="https://www.instagram.com/{config.instagram_profile}/" target="_blank" rel="noreferrer">
         <img src={InstagramIcon} alt="Instagram">
       </a>
-      <a href="https://www.youtube.com/channel/UC0RqFUeh2gCIkpNCkyPSBig" target="_blank" rel="noreferrer">
+    <a href="https://www.youtube.com/channel/{config.youtube_channel}" target="_blank" rel="noreferrer">
         <img src={YoutubeIcon} alt="Youtube">
       </a>
     </section>

@@ -9,6 +9,8 @@
   import Container from '~/components/Container/index.svelte'
   import Footer from '~/components/Footer/index.svelte'
   import Title from '~/components/Title/index.svelte'
+
+  import config from '~/config'
 </script>
 
 <Wrapper>
@@ -22,7 +24,7 @@
           title="Transmissão ao vivo da igreja"
           width="100%"
           height="700"
-          src="https://www.youtube.com/embed/fZ6TY0qVakc"
+          src="https://www.youtube.com/embed/{config.youtube_live_embed_code}"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen />

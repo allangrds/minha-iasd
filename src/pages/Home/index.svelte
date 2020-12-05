@@ -15,6 +15,8 @@
   import PrayIcon from '~/assets/images/home-pray.svg'
   import LocationIcon from '~/assets/images/home-location.svg'
   import LiveIcon from '~/assets/images/home-live.svg'
+
+  import config from '~/config'
 </script>
 
 <Wrapper>
@@ -46,7 +48,7 @@
             }}
             link={{
               type: 'external',
-              url: 'https://www.sympla.com.br/culto-de-sabado-12122020---iasd-belem__1076578',
+              url: config.face_to_face_workship_register_url,
               text: 'ver mais',
             }}
           />
