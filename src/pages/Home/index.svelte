@@ -46,7 +46,7 @@
             }}
             link={{
               type: 'external',
-              url: 'http://google.com',
+              url: 'https://www.sympla.com.br/culto-de-sabado-12122020---iasd-belem__1076578',
               text: 'ver mais',
             }}
           />

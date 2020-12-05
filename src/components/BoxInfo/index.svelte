@@ -26,7 +26,9 @@
     { title }
   </span>
   <span class="{styles.description} {descriptionLongStyle}">
-    { description }
+    { description && description}
+
+    <slot></slot>
   </span>
   {#if link && link.text}
     <div class={styles['link-wrapper']}>
