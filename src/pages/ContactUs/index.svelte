@@ -1,5 +1,5 @@
 <script>
-  import style from './style.css'
+  import styles from './style.css'
 
   import RightSidebarLogo from '~/components/RightSidebarLogo/index.svelte'
   import Header from '~/components/Header/index.svelte'
@@ -19,10 +19,10 @@
   <Content>
     <Header />
     <Main>
-      <div class={style['header-img']} />
+      <div class={styles['header-img']} />
       <Container>
         <Title text="fale conosco" />
-        <div class={style['contact-methods']}>
+        <div class={styles['card-list']}>
           <BoxInfo
             title="WhatsApp"
             description="(11) 2292-1229"
@@ -33,7 +33,7 @@
           />
         </div>
         <form
-          class={style.form}
+          class={styles.form}
           action="https://formspree.io/f/xpzojeqg"
           method="POST"
         >
@@ -55,7 +55,7 @@
             placeholder="digite seu telefone"
             type="telephone"
           />
-          <div class={style.comment}>
+          <div class={styles.comment}>
             <Textarea
               name="comment"
               label="Seu comentário"

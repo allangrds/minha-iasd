@@ -1,7 +1,7 @@
 <script>
-  import style from './style.css'
+  import styles from './style.css'
 </script>
 
-<section class={style.content}>
+<section class={styles.content}>
   <slot></slot>
 </section>

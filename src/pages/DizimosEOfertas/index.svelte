@@ -22,7 +22,7 @@
       <div class={styles['header-img']} />
       <Container>
         <Title text="Dízimos e ofertas" />
-        <div class={styles.options}>
+        <div class={styles['card-list']}>
           <BoxInfo
             title="Por aplicativo"
             description="Você pode dizimar e ofertar utilizando o aplicativo oficial da nossa igreja, o 7me."

@@ -1,5 +1,5 @@
 <script>
-  import style from './style.css'
+  import styles from './style.css'
 
   import RightSidebarLogo from '~/components/RightSidebarLogo/index.svelte'
   import Header from '~/components/Header/index.svelte'
@@ -23,9 +23,9 @@
   <Content>
     <Header />
     <Main>
-      <div class={style['header-img']}></div>
+      <div class={styles['header-img']}></div>
       <Container>
-        <section class={style.featured}>
+        <section class={styles['card-list']}>
           <BoxInfo
             title="Culto ao vivo"
             description="Veja nosso culto direto de sua casa"
@@ -79,8 +79,8 @@
             }}
           />
         </section>
-        <Title text="Horário dos cultos" />
-        <section class={style['cult-time']}>
+        <Title text="Horário dos cultos" style={styles.title}/>
+        <section class={styles['card-list']}>
           <BoxInfo
             title="Sábado"
             description="9:30"

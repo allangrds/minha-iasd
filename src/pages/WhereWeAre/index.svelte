@@ -1,5 +1,5 @@
 <script>
-  import style from './style.css'
+  import styles from './style.css'
 
   import RightSidebarLogo from '~/components/RightSidebarLogo/index.svelte'
   import Header from '~/components/Header/index.svelte'
@@ -16,13 +16,15 @@
   <Content>
     <Header />
     <Main>
-      <div class={style['header-img']} />
+      <div class={styles['header-img']} />
       <Container>
         <Title text="onde estamos" />
-        <BoxInfo
-          title="Endereço"
-          description="Rua Martim Affonso, 152 - Belenzinho, São Paulo - SP, 03057-050"
-        />
+        <div class={styles['card-list']}>
+          <BoxInfo
+            title="Endereço"
+            description="Rua Martim Affonso, 152 - Belenzinho, São Paulo - SP, 03057-050"
+          />
+        </div>
         <iframe
           title="localização da igreja"
           width="100%"

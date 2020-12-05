@@ -1,5 +1,5 @@
 <script>
-  import style from './style.css'
+  import styles from './style.css'
 
   import RightSidebarLogo from '~/components/RightSidebarLogo/index.svelte'
   import Header from '~/components/Header/index.svelte'
@@ -16,7 +16,7 @@
   <Content>
     <Header />
     <Main>
-      <div class={style['header-img']} />
+      <div class={styles['header-img']} />
       <Container>
         <Title text="Boletim pelo Whatsapp" />
         <Text>

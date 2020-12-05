@@ -1,7 +1,7 @@
 <script>
   import { Link } from 'svelte-routing'
 
-  import style from './style.css'
+  import styles from './style.css'
 
   import FacebookIcon from '~/assets/images/facebook.svg'
   import InstagramIcon from '~/assets/images/instagram.svg'
@@ -11,36 +11,36 @@
   import config from '~/config'
 </script>
 
-<footer class={style.footer}>
-  <div class={style.container}>
-    <section class={style.church}>
-      <img class={style['iasd-logo']} src={IasdLogoIcon} alt="Igreja Adventista do Sétimo Dia" />
+<footer class={styles.footer}>
+  <div class={styles.container}>
+    <section class={styles.church}>
+      <img class={styles['iasd-logo']} src={IasdLogoIcon} alt="Igreja Adventista do Sétimo Dia" />
       <nav>
         <ul>
-          <li class={style.item}>
-            <Link to="/" class={style.link}>
+          <li class={styles.item}>
+            <Link to="/" class={styles.link}>
               início
             </Link>
           </li>
-          <li class={style.item}>
-            <Link to="/ao-vivo" class={style.link}>
+          <li class={styles.item}>
+            <Link to="/ao-vivo" class={styles.link}>
               ao vivo
             </Link>
           </li>
-          <li class={style.item}>
-            <Link to="/onde-estamos" class={style.link}>
+          <li class={styles.item}>
+            <Link to="/onde-estamos" class={styles.link}>
               onde estamos
             </Link>
           </li>
-          <li class={style.item}>
-            <Link to="/fale-conosco" class={style.link}>
+          <li class={styles.item}>
+            <Link to="/fale-conosco" class={styles.link}>
               fale conosco
             </Link>
           </li>
         </ul>
       </nav>
     </section>
-    <section class={style['social-media']}>
+    <section class={styles['social-media']}>
       <a href="https://pt-br.facebook.com/{config.facebook_page}/" target="_blank" rel="noreferrer">
         <img src={FacebookIcon} alt="Facebook">
       </a>

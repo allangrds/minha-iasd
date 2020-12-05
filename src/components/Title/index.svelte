@@ -1,11 +1,12 @@
 <script>
-  import style from './style.css'
+  import styles from './style.css'
 
   export let text = ''
+  export let style
 </script>
 
-<header class={style.header}>
-  <h1 class={style.title}>
+<header class={styles.header}>
+  <h1 class="{styles.title} {style}">
     { text }
   </h1>
 </header>
