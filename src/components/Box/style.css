@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  word-break: break-all;
+  word-break: break-word;
 
   @media only screen and (max-width: 925px) {
     min-width: 100% !important;

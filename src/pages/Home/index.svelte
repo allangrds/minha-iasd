@@ -7,10 +7,11 @@
   import Wrapper from '~/components/Wrapper/index.svelte'
   import Main from '~/components/Main/index.svelte'
   import Container from '~/components/Container/index.svelte'
-  import Box from '~/components/Box/index.svelte'
   import Footer from '~/components/Footer/index.svelte'
   import Title from '~/components/Title/index.svelte'
   import BoxInfo from '~/components/BoxInfo/index.svelte'
+
+  import InformativoIcon from '~/assets/images/home-informativo.svg'
 </script>
 
 <Wrapper>
@@ -19,8 +20,18 @@
     <Main>
       <div class={style['header-img']}></div>
       <Container>
+        <section class={style.featured}>
+          <BoxInfo
+            title="Informativo"
+            description="Veja a programação de nossa igreja para hoje"
+            icon={InformativoIcon}
+            iconDescription="Uma folha de papel com várias linhas escritas"
+            linkText="ver mais"
+            linkUrl="/boletim/cadastro"
+          />
+        </section>
         <Title text="Horário dos cultos" />
-        <div class={style['cult-time']}>
+        <section class={style['cult-time']}>
           <BoxInfo
             title="Sábado"
             description="9:30"
@@ -33,7 +44,7 @@
             title="Quarta"
             description="19:00"
           />
-        </div>
+        </section>
       </Container>
       <Footer />
     </Main>
