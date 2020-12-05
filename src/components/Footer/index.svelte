@@ -22,11 +22,13 @@
               início
             </Link>
           </li>
-          <li class={styles.item}>
-            <Link to="/ao-vivo" class={styles.link}>
-              ao vivo
-            </Link>
-          </li>
+          {#if config.youtube_live_embed_code}
+            <li class={styles.item}>
+              <Link to="/ao-vivo" class={styles.link}>
+                ao vivo
+              </Link>
+            </li>
+          {/if}
           <li class={styles.item}>
             <Link to="/onde-estamos" class={styles.link}>
               onde estamos

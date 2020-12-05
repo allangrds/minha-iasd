@@ -26,32 +26,36 @@
       <div class={styles['header-img']}></div>
       <Container>
         <section class={styles['card-list']}>
-          <BoxInfo
-            title="Culto ao vivo"
-            description="Veja nosso culto direto da sua casa"
-            icon={{
-              element: LiveIcon,
-              alt: 'Um antena com sinal e uma placa escrito "live"'
-            }}
-            link={{
-              type: 'internal',
-              url: '/ao-vivo',
-              text: 'ver mais',
-            }}
-          />
-          <BoxInfo
-            title="Culto presencial"
-            description="Preencha nosso formulário de inscrição e venha nos visitar"
-            icon={{
-              element: LocationIcon,
-              alt: 'Um símbolo informando que aqui é o local, referência a onde está alguma coisa'
-            }}
-            link={{
-              type: 'external',
-              url: config.face_to_face_workship_register_url,
-              text: 'ver mais',
-            }}
-          />
+          {#if config.youtube_live_embed_code}
+            <BoxInfo
+              title="Culto ao vivo"
+              description="Veja nosso culto direto da sua casa"
+              icon={{
+                element: LiveIcon,
+                alt: 'Um antena com sinal e uma placa escrito "live"'
+              }}
+              link={{
+                type: 'internal',
+                url: '/ao-vivo',
+                text: 'ver mais',
+              }}
+            />
+          {/if}
+          {#if config.face_to_face_workship_register_url}
+            <BoxInfo
+              title="Culto presencial"
+              description="Preencha nosso formulário de inscrição e venha nos visitar"
+              icon={{
+                element: LocationIcon,
+                alt: 'Um símbolo informando que aqui é o local, referência a onde está alguma coisa'
+              }}
+              link={{
+                type: 'external',
+                url: config.face_to_face_workship_register_url,
+                text: 'ver mais',
+              }}
+            />
+          {/if}
           <BoxInfo
             title="Informativo"
             description="Fique por dentro do que está acontecendo na igreja"
