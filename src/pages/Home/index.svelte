@@ -13,6 +13,8 @@
 
   import InformativoIcon from '~/assets/images/home-informativo.svg'
   import PrayIcon from '~/assets/images/home-pray.svg'
+  import LocationIcon from '~/assets/images/home-location.svg'
+  import LiveIcon from '~/assets/images/home-live.svg'
 </script>
 
 <Wrapper>
@@ -22,6 +24,22 @@
       <div class={style['header-img']}></div>
       <Container>
         <section class={style.featured}>
+          <BoxInfo
+            title="Culto ao vivo"
+            description="Veja nosso culto direto de sua casa"
+            icon={LiveIcon}
+            iconDescription="Uma folha de papel com várias linhas escritas"
+            linkText="ver mais"
+            linkUrl="/ao-vivo"
+          />
+          <BoxInfo
+            title="Culto presencial"
+            description="Preencha nosso formulário de inscrição e venha até nós"
+            icon={LocationIcon}
+            iconDescription="Uma folha de papel com várias linhas escritas"
+            linkText="ver mais"
+            linkUrl="/ao-vivo"
+          />
           <BoxInfo
             title="Informativo"
             description="A programação de nossa igreja para hoje"
@@ -36,7 +54,7 @@
             icon={PrayIcon}
             iconDescription="Uma folha de papel com várias linhas escritas"
             linkText="ver mais"
-            linkUrl="/boletim/cadastro"
+            linkUrl="/dizimos-e-ofertas"
           />
         </section>
         <Title text="Horário dos cultos" />
