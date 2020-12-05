@@ -11,6 +11,8 @@
   export let linkText = ''
   export let linkUrl = ''
   export let style
+
+  const descriptionLongStyle = linkText && styles['description-long']
 </script>
 
 <Box style={style}>
@@ -25,7 +27,7 @@
   <span class={styles.title}>
     { title }
   </span>
-  <span class={styles.description}>
+  <span class="{styles.description} {descriptionLongStyle}">
     { description }
   </span>
   {#if linkText}
