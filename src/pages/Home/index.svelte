@@ -27,34 +27,54 @@
           <BoxInfo
             title="Culto ao vivo"
             description="Veja nosso culto direto de sua casa"
-            icon={LiveIcon}
-            iconDescription="Uma folha de papel com várias linhas escritas"
-            linkText="ver mais"
-            linkUrl="/ao-vivo"
+            icon={{
+              element: LiveIcon,
+              alt: 'Um antena com sinal e uma placa escrito "live"'
+            }}
+            link={{
+              type: 'internal',
+              url: '/ao-vivo',
+              text: 'ver mais',
+            }}
           />
           <BoxInfo
             title="Culto presencial"
             description="Preencha nosso formulário de inscrição e venha até nós"
-            icon={LocationIcon}
-            iconDescription="Uma folha de papel com várias linhas escritas"
-            linkText="ver mais"
-            linkUrl="/ao-vivo"
+            icon={{
+              element: LocationIcon,
+              alt: 'Um símbolo informando que aqui é o local, referência a onde está alguma coisa'
+            }}
+            link={{
+              type: 'external',
+              url: 'http://google.com',
+              text: 'ver mais',
+            }}
           />
           <BoxInfo
             title="Informativo"
             description="A programação de nossa igreja para hoje"
-            icon={InformativoIcon}
-            iconDescription="Uma folha de papel com várias linhas escritas"
-            linkText="ver mais"
-            linkUrl="/boletim/cadastro"
+            icon={{
+              element: InformativoIcon,
+              alt: 'Uma folha de papel com várias linhas escritas'
+            }}
+            link={{
+              type: 'internal',
+              url: '/boletim/cadastro',
+              text: 'ver mais',
+            }}
           />
           <BoxInfo
             title="Dízimos e ofertas"
             description="Saiba como devolver seu dízimo e oferta"
-            icon={PrayIcon}
-            iconDescription="Uma folha de papel com várias linhas escritas"
-            linkText="ver mais"
-            linkUrl="/dizimos-e-ofertas"
+            icon={{
+              element: PrayIcon,
+              alt: 'Duas mãos abertas, tendo no meio uma cruz'
+            }}
+            link={{
+              type: 'internal',
+              url: '/dizimos-e-ofertas',
+              text: 'ver mais',
+            }}
           />
         </section>
         <Title text="Horário dos cultos" />

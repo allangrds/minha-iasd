@@ -7,20 +7,18 @@
   export let title = ''
   export let description = ''
   export let icon
-  export let iconDescription = ''
-  export let linkText = ''
-  export let linkUrl = ''
+  export let link
   export let style
 
-  const descriptionLongStyle = linkText && styles['description-long']
+  const descriptionLongStyle = (link && link.text) && styles['description-long']
 </script>
 
 <Box style={style}>
-  {#if icon}
+  {#if icon && icon.element}
     <div class={styles['image-wrapper']}>
       <img
-        src={icon}
-        alt={iconDescription}
+        src={icon.element}
+        alt={icon.alt}
       />
     </div>
   {/if}
@@ -30,11 +28,17 @@
   <span class="{styles.description} {descriptionLongStyle}">
     { description }
   </span>
-  {#if linkText}
+  {#if link && link.text}
     <div class={styles['link-wrapper']}>
-      <Link to={linkUrl}>
-        { linkText }
-      </Link>
+      {#if link.type === 'internal'}
+        <Link to={link.url}>
+          { link.text }
+        </Link>
+      {:else}
+        <a href={link.url} target="_blank" rel="noreferrer">
+          { link.text }
+        </a>
+      {/if}
     </div>
   {/if}
 </Box>
