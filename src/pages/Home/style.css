@@ -8,7 +8,7 @@
 }
 
 .cult-time {
-  max-width: 900px;
+  max-width: 830px;
   display: flex;
 
   @media only screen and (max-width: 925px) {
@@ -23,5 +23,17 @@
 }
 
 .featured {
+  display: flex;
   margin-bottom: 50px;
+  max-width: 540px;
+
+  @media only screen and (max-width: 925px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 925px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

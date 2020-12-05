@@ -12,6 +12,7 @@
   import BoxInfo from '~/components/BoxInfo/index.svelte'
 
   import InformativoIcon from '~/assets/images/home-informativo.svg'
+  import PrayIcon from '~/assets/images/home-pray.svg'
 </script>
 
 <Wrapper>
@@ -23,8 +24,16 @@
         <section class={style.featured}>
           <BoxInfo
             title="Informativo"
-            description="Veja a programação de nossa igreja para hoje"
+            description="A programação de nossa igreja para hoje"
             icon={InformativoIcon}
+            iconDescription="Uma folha de papel com várias linhas escritas"
+            linkText="ver mais"
+            linkUrl="/boletim/cadastro"
+          />
+          <BoxInfo
+            title="Dízimos e ofertas"
+            description="Saiba como devolver seu dízimo e oferta"
+            icon={PrayIcon}
             iconDescription="Uma folha de papel com várias linhas escritas"
             linkText="ver mais"
             linkUrl="/boletim/cadastro"
