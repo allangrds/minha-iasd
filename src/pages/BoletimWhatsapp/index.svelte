@@ -9,7 +9,7 @@
   import Container from '~/components/Container/index.svelte'
   import Footer from '~/components/Footer/index.svelte'
   import Title from '~/components/Title/index.svelte'
-  import BoxInfo from '~/components/BoxInfo/index.svelte'
+  import Text from '~/components/Text/index.svelte'
 </script>
 
 <Wrapper>
@@ -18,21 +18,13 @@
     <Main>
       <div class={styles['header-img']} />
       <Container>
-        <Title text="onde estamos" />
-        <div class={styles['card-list']}>
-          <BoxInfo
-            title="Endereço"
-            description="Rua Martim Affonso, 152 - Belenzinho, São Paulo - SP, 03057-050"
-          />
-        </div>
-        <iframe
-          title="localização da igreja"
-          width="100%"
-          height="450"
-          frameborder="0"
-          style="border: 0;"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJLYBZnStZzpQR75ZTAM1cIIo&key=AIzaSyCiZR35QJgK6Tsid94ZOo-TuKwDlH55Nds"
-          allowfullscreen />
+        <Title text="Boletim pelo Whatsapp" />
+        <Text>
+          Fique <b>informado</b> de tudo que acontece em <b>nossa igreja</b>!
+        </Text>
+        <Text>
+          <b>Envie</b> um "oi" pelo seu <b>Whatsapp</b> para o número <b>(11) 2292-1229</b>, e comece a receber nosso boletim.
+        </Text>
       </Container>
       <Footer />
     </Main>

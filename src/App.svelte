@@ -4,6 +4,8 @@
   import Live from './pages/Live/index.svelte'
   import WhereWeAre from './pages/WhereWeAre/index.svelte'
   import ContactUs from './pages/ContactUs/index.svelte'
+  import BoletimWhatsapp from './pages/BoletimWhatsapp/index.svelte'
+  import DizimosEOfertas from './pages/DizimosEOfertas/index.svelte'
 
   export let url = ''
 </script>
@@ -21,5 +23,11 @@
   </Route>
   <Route path="/fale-conosco">
     <ContactUs />
+  </Route>
+  <Route path="/boletim/cadastro">
+    <BoletimWhatsapp />
+  </Route>
+  <Route path="/dizimos-e-ofertas">
+    <DizimosEOfertas />
   </Route>
  </Router>

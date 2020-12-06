@@ -1,5 +1,5 @@
 <script>
-  import style from './style.css'
+  import styles from './style.css'
 
   import RightSidebarLogo from '~/components/RightSidebarLogo/index.svelte'
   import Header from '~/components/Header/index.svelte'
@@ -9,20 +9,22 @@
   import Container from '~/components/Container/index.svelte'
   import Footer from '~/components/Footer/index.svelte'
   import Title from '~/components/Title/index.svelte'
+
+  import config from '~/config'
 </script>
 
 <Wrapper>
   <Content>
     <Header />
     <Main>
-      <div class={style['header-img']} />
+      <div class={styles['header-img']} />
       <Container>
         <Title text="ao vivo" />
         <iframe
           title="Transmissão ao vivo da igreja"
           width="100%"
           height="700"
-          src="https://www.youtube.com/embed/fZ6TY0qVakc"
+          src="https://www.youtube.com/embed/{config.youtube_live_embed_code}"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen />

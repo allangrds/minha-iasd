@@ -7,17 +7,12 @@
   background-position: center center;
 }
 
-.cult-time {
-  max-width: 900px;
-  display: flex;
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
 
-  @media only screen and (max-width: 925px) {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media only screen and (min-width: 925px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.title {
+  margin-top: 60px;
 }

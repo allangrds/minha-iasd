@@ -2,13 +2,11 @@
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   min-width: 250px;
-  max-width: 250px;
   padding: 30px;
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  word-break: break-all;
+  word-break: break-word;
 
   @media only screen and (max-width: 925px) {
     min-width: 100% !important;

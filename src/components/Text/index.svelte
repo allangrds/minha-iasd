@@ -2,6 +2,6 @@
   import styles from './style.css'
 </script>
 
-<div class={styles.wrapper}>
+<p class={styles.text}>
   <slot></slot>
-</div>
+</p>

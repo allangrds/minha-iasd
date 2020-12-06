@@ -1,41 +1,42 @@
 <script>
   import { Link } from 'svelte-routing'
 
-  import style from './style.css'
+  import styles from './style.css'
+  import config from '~/config'
 </script>
 
 
-<header class={style.header}>
-  <div class={style.container}>
+<header class={styles.header}>
+  <div class={styles.container}>
     <div>
-      <h1 class={style['church-name']}>
+      <h1 class={styles['church-name']}>
         Igreja Adventista do Sétimo Dia
       </h1>
-      <h2 class={style['church-name-sub']}>
+      <h2 class={styles['church-name-sub']}>
         Belém
       </h2>
     </div>
-    <div class={style['mobile-navigation']}>
-      <div class={style.menu}>
+    <div class={styles['mobile-navigation']}>
+      <div class={styles.menu}>
         <label
-          class={style.icon}
+          class={styles.icon}
           for="toggle"
         >
           &#9776;
         </label>
         <input
-          class={style.input}
+          class={styles.input}
           type="checkbox"
           id="toggle"
         />
-        <span class={style.text}>
+        <span class={styles.text}>
           Menu
         </span>
-        <nav class={style.navigation}>
-          <ul class={style['institutional-list']}>
-            <li class={style.item}>
+        <nav class={styles.navigation}>
+          <ul class={styles['institutional-list']}>
+            <li class={styles.item}>
               <a
-                class={style.link}
+                class={styles.link}
                 href="https://www.adventistas.org/pt/institucional/"
                 target="_blank"
                 rel="noreferrer"
@@ -43,9 +44,9 @@
                 institucional
               </a>
             </li>
-            <li class={style.item}>
+            <li class={styles.item}>
               <a
-                class={style.link}
+                class={styles.link}
                 href="https://noticias.adventistas.org/pt/"
                 target="_blank"
                 rel="noreferrer"
@@ -53,9 +54,9 @@
                 notícias
               </a>
             </li>
-            <li class={style.item}>
+            <li class={styles.item}>
               <a
-                class={style.link}
+                class={styles.link}
                 href="https://videos.adventistas.org/pt/"
                 target="_blank"
                 rel="noreferrer"
@@ -64,24 +65,26 @@
               </a>
             </li>
           </ul>
-          <ul class={style['site-list']}>
-            <li class={style.item}>
-              <Link to="/" class={style.link}>
+          <ul class={styles['site-list']}>
+            <li class={styles.item}>
+              <Link to="/" class={styles.link}>
                 início
               </Link>
             </li>
-            <li class={style.item}>
-              <Link to="/ao-vivo" class={style.link}>
-                ao vivo
-              </Link>
-            </li>
-            <li class={style.item}>
-              <Link to="/onde-estamos" class={style.link}>
+            {#if config.youtube_live_embed_code}
+              <li class={styles.item}>
+                <Link to="/ao-vivo" class={styles.link}>
+                  ao vivo
+                </Link>
+              </li>
+            {/if}
+            <li class={styles.item}>
+              <Link to="/onde-estamos" class={styles.link}>
                 onde estamos
               </Link>
             </li>
-            <li class={style.item}>
-              <Link to="/fale-conosco" class={style.link}>
+            <li class={styles.item}>
+              <Link to="/fale-conosco" class={styles.link}>
                 fale conosco
               </Link>
             </li>
@@ -89,12 +92,12 @@
         </nav>
       </div>
     </div>
-    <div class={style['desktop-navigation']}>
-      <nav class={style['institutional-navigation']}>
-        <ul class={style.list}>
-          <li class={style.item}>
+    <div class={styles['desktop-navigation']}>
+      <nav class={styles['institutional-navigation']}>
+        <ul class={styles.list}>
+          <li class={styles.item}>
             <a
-              class={style.link}
+              class={styles.link}
               href="https://www.adventistas.org/pt/institucional/"
               target="_blank"
               rel="noreferrer"
@@ -102,9 +105,9 @@
               institucional
             </a>
           </li>
-          <li class={style.item}>
+          <li class={styles.item}>
             <a
-              class={style.link}
+              class={styles.link}
               href="https://noticias.adventistas.org/pt/"
               target="_blank"
               rel="noreferrer"
@@ -112,9 +115,9 @@
               notícias
             </a>
           </li>
-          <li class={style.item}>
+          <li class={styles.item}>
             <a
-              class={style.link}
+              class={styles.link}
               href="https://videos.adventistas.org/pt/"
               target="_blank"
               rel="noreferrer"
@@ -124,25 +127,27 @@
           </li>
         </ul>
       </nav>
-      <nav class={style['site-navigation']}>
-        <ul class={style['list']}>
-          <li class={style['item']}>
-            <Link to="/" class={style.link}>
+      <nav class={styles['site-navigation']}>
+        <ul class={styles['list']}>
+          <li class={styles['item']}>
+            <Link to="/" class={styles.link}>
               Início
             </Link>
           </li>
-          <li class={style.item}>
-            <Link to="/ao-vivo" class={style.link}>
-              Ao vivo
-            </Link>
-          </li>
-          <li class={style.item}>
-            <Link to="/onde-estamos" class={style.link}>
+          {#if config.youtube_live_embed_code}
+            <li class={styles.item}>
+              <Link to="/ao-vivo" class={styles.link}>
+                Ao vivo
+              </Link>
+            </li>
+          {/if}
+          <li class={styles.item}>
+            <Link to="/onde-estamos" class={styles.link}>
               Onde estamos
             </Link>
           </li>
-          <li class={style.item}>
-            <Link to="/fale-conosco" class={style.link}>
+          <li class={styles.item}>
+            <Link to="/fale-conosco" class={styles.link}>
               Fale conosco
             </Link>
           </li>
