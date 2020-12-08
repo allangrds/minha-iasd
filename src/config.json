@@ -10,5 +10,11 @@
   contact_form_formspree_id: "xpzojeqg",
   church_google_maps_place_id: "ChIJLYBZnStZzpQR75ZTAM1cIIo",
   church_google_maps_api_key: "AIzaSyCiZR35QJgK6Tsid94ZOo-TuKwDlH55Nds",
-  church_name: "belém"
+  church_name: "belém",
+  tithe_bank_name: "Bradesco(237)",
+  tithe_bank_agency: "3396-0",
+  tithe_bank_account: "838010-4",
+  tithe_bank_document_number: "55.233.019/0012-22",
+  tithe_email: "jordaoiasd@gmail.com",
+  tithe_whatsapp: "https://wa.me/5511994746983"
 }

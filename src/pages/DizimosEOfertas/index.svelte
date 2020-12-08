@@ -12,7 +12,7 @@
   import Text from '~/components/Text/index.svelte'
   import BoxInfo from '~/components/BoxInfo/index.svelte'
 
-  import DadosBancarios from './DadosBancarios.svelte'
+  import config from '~/config'
 </script>
 
 <Wrapper>
@@ -32,35 +32,44 @@
               url: 'https://apps.adventistas.org/pt/7me/desk/'
             }}
           />
-          <BoxInfo
-            title="Dados bancários"
-          >
-            <p>
-              <b>Banco</b>: Bradesco(237)
-            </p>
 
-            <p>
-              <b>Agência</b>: 3396-0
-            </p>
+          {#if config.tithe_bank_name}
+            <BoxInfo
+              title="Dados bancários"
+            >
+              <p>
+                <b>Banco</b>: {config.tithe_bank_name}
+              </p>
 
-            <p>
-              <b>Conta</b>: 838010-4
-            </p>
+              <p>
+                <b>Agência</b>: {config.tithe_bank_agency}
+              </p>
 
-            <p>
-              <b>CNPJ</b>: 55.233.019/0012-22
-            </p>
-          </BoxInfo>
+              <p>
+                <b>Conta</b>: {config.tithe_bank_account}
+              </p>
+
+              <p>
+                <b>CNPJ</b>: {config.tithe_bank_document_number}
+              </p>
+            </BoxInfo>
+          {/if}
         </div>
-        <Text>
-          Quando você ofertar ou dizimar fazendo um depósito ou transferência, mande uma mensagem para <b>Edgard Jordão</b> identificando os valores.
-        </Text>
-        <Text>
-          <b>E-mail</b>: jordaoiasd@gmail.com
-        </Text>
-        <Text>
-          <b>Whatsapp</b>: https://wa.me/5511994746983
-        </Text>
+        {#if config.tithe_email || config.tithe_whatsapp}
+          <Text>
+            Quando você ofertar ou dizimar fazendo um depósito ou transferência, mande uma mensagem para <b>Edgard Jordão</b> identificando os valores.
+          </Text>
+        {/if}
+        {#if config.tithe_email}
+          <Text>
+            <b>E-mail</b>: jordaoiasd@gmail.com
+          </Text>
+        {/if}
+        {#if config.tithe_whatsapp}
+          <Text>
+            <b>Whatsapp</b>: {config.tithe_whatsapp}
+          </Text>
+        {/if}
       </Container>
       <Footer />
     </Main>
