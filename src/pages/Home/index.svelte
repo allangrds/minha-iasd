@@ -89,15 +89,15 @@
         <section class={styles['card-list']}>
           <BoxInfo
             title="Sábado"
-            description="9:30"
+            description={config.cult_saturday_time}
           />
           <BoxInfo
             title="Domingo"
-            description="18:00"
+            description={config.cult_sunday_time}
           />
           <BoxInfo
             title="Quarta"
-            description="19:00"
+            description={config.cult_wednesday_time}
           />
         </section>
       </Container>
