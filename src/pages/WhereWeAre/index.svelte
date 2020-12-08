@@ -33,7 +33,7 @@
           height="450"
           frameborder="0"
           style="border: 0;"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJLYBZnStZzpQR75ZTAM1cIIo&key=AIzaSyCiZR35QJgK6Tsid94ZOo-TuKwDlH55Nds"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:{config.church_google_maps_place_id}&key={config.church_google_maps_api_key}"
           allowfullscreen />
       </Container>
       <Footer />
