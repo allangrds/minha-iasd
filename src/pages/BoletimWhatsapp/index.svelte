@@ -10,6 +10,8 @@
   import Footer from '~/components/Footer/index.svelte'
   import Title from '~/components/Title/index.svelte'
   import Text from '~/components/Text/index.svelte'
+
+  import config from '~/config'
 </script>
 
 <Wrapper>
@@ -23,7 +25,7 @@
           Fique <b>informado</b> de tudo que acontece em <b>nossa igreja</b>!
         </Text>
         <Text>
-          <b>Envie</b> um "oi" pelo seu <b>Whatsapp</b> para o número <b>(11) 2292-1229</b>, e comece a receber nosso boletim.
+          <b>Envie</b> um "oi" pelo seu <b>Whatsapp</b> para o número <b>{config.informative_whatsapp}</b>, e comece a receber nosso boletim.
         </Text>
       </Container>
       <Footer />

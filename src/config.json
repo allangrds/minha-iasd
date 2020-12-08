@@ -16,5 +16,7 @@
   tithe_bank_account: "838010-4",
   tithe_bank_document_number: "55.233.019/0012-22",
   tithe_email: "jordaoiasd@gmail.com",
-  tithe_whatsapp: "https://wa.me/5511994746983"
+  tithe_whatsapp: "https://wa.me/5511994746983",
+  informative_active: true,
+  informative_whatsapp: "(11) 2292-1229"
 }

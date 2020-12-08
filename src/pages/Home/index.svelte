@@ -56,19 +56,21 @@
               }}
             />
           {/if}
-          <BoxInfo
-            title="Informativo"
-            description="Fique por dentro do que está acontecendo na igreja"
-            icon={{
-              element: InformativoIcon,
-              alt: 'Uma folha de papel com várias linhas escritas'
-            }}
-            link={{
-              type: 'internal',
-              url: '/boletim/cadastro',
-              text: 'ver mais',
-            }}
-          />
+          {#if config.informative_active}
+            <BoxInfo
+              title="Informativo"
+              description="Fique por dentro do que está acontecendo na igreja"
+              icon={{
+                element: InformativoIcon,
+                alt: 'Uma folha de papel com várias linhas escritas'
+              }}
+              link={{
+                type: 'internal',
+                url: '/boletim/cadastro',
+                text: 'ver mais',
+              }}
+            />
+          {/if}
           <BoxInfo
             title="Dízimos e ofertas"
             description="Saiba como devolver seu dízimo e oferta"
