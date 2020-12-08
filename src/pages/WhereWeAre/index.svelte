@@ -10,6 +10,8 @@
   import Footer from '~/components/Footer/index.svelte'
   import Title from '~/components/Title/index.svelte'
   import BoxInfo from '~/components/BoxInfo/index.svelte'
+
+  import config from '~/config'
 </script>
 
 <Wrapper>
@@ -22,7 +24,7 @@
         <div class={styles['card-list']}>
           <BoxInfo
             title="Endereço"
-            description="Rua Martim Affonso, 152 - Belenzinho, São Paulo - SP, 03057-050"
+            description={config.church_address}
           />
         </div>
         <iframe
