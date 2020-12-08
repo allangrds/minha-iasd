@@ -17,7 +17,11 @@
 .social-media {
   min-width: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.social-media .link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .church {
