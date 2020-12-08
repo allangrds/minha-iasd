@@ -13,7 +13,7 @@
         Igreja Adventista do Sétimo Dia
       </h1>
       <h2 class={styles['church-name-sub']}>
-        Belém
+        {config.church_name}
       </h2>
     </div>
     <div class={styles['mobile-navigation']}>

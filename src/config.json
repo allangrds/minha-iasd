@@ -9,5 +9,6 @@
   church_email: "iasdbelem.comunicacao@gmail.com",
   contact_form_formspree_id: "xpzojeqg",
   church_google_maps_place_id: "ChIJLYBZnStZzpQR75ZTAM1cIIo",
-  church_google_maps_api_key: "AIzaSyCiZR35QJgK6Tsid94ZOo-TuKwDlH55Nds"
+  church_google_maps_api_key: "AIzaSyCiZR35QJgK6Tsid94ZOo-TuKwDlH55Nds",
+  church_name: "belém"
 }
