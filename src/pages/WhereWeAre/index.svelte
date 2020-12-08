@@ -10,6 +10,8 @@
   import Footer from '~/components/Footer/index.svelte'
   import Title from '~/components/Title/index.svelte'
   import BoxInfo from '~/components/BoxInfo/index.svelte'
+
+  import config from '~/config'
 </script>
 
 <Wrapper>
@@ -22,7 +24,7 @@
         <div class={styles['card-list']}>
           <BoxInfo
             title="Endereço"
-            description="Rua Martim Affonso, 152 - Belenzinho, São Paulo - SP, 03057-050"
+            description={config.church_address}
           />
         </div>
         <iframe
@@ -31,7 +33,7 @@
           height="450"
           frameborder="0"
           style="border: 0;"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJLYBZnStZzpQR75ZTAM1cIIo&key=AIzaSyCiZR35QJgK6Tsid94ZOo-TuKwDlH55Nds"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:{config.church_google_maps_place_id}&key={config.church_google_maps_api_key}"
           allowfullscreen />
       </Container>
       <Footer />

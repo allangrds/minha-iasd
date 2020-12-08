@@ -56,19 +56,21 @@
               }}
             />
           {/if}
-          <BoxInfo
-            title="Informativo"
-            description="Fique por dentro do que está acontecendo na igreja"
-            icon={{
-              element: InformativoIcon,
-              alt: 'Uma folha de papel com várias linhas escritas'
-            }}
-            link={{
-              type: 'internal',
-              url: '/boletim/cadastro',
-              text: 'ver mais',
-            }}
-          />
+          {#if config.informative_active}
+            <BoxInfo
+              title="Informativo"
+              description="Fique por dentro do que está acontecendo na igreja"
+              icon={{
+                element: InformativoIcon,
+                alt: 'Uma folha de papel com várias linhas escritas'
+              }}
+              link={{
+                type: 'internal',
+                url: '/boletim/cadastro',
+                text: 'ver mais',
+              }}
+            />
+          {/if}
           <BoxInfo
             title="Dízimos e ofertas"
             description="Saiba como devolver seu dízimo e oferta"
@@ -87,15 +89,15 @@
         <section class={styles['card-list']}>
           <BoxInfo
             title="Sábado"
-            description="9:30"
+            description={config.cult_saturday_time}
           />
           <BoxInfo
             title="Domingo"
-            description="18:00"
+            description={config.cult_sunday_time}
           />
           <BoxInfo
             title="Quarta"
-            description="19:00"
+            description={config.cult_wednesday_time}
           />
         </section>
       </Container>

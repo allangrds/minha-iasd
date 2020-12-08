@@ -18,24 +18,24 @@
       <nav>
         <ul>
           <li class={styles.item}>
-            <Link to="/" class={styles.link}>
+            <Link to="/">
               início
             </Link>
           </li>
           {#if config.youtube_live_embed_code}
             <li class={styles.item}>
-              <Link to="/ao-vivo" class={styles.link}>
+              <Link to="/ao-vivo">
                 ao vivo
               </Link>
             </li>
           {/if}
           <li class={styles.item}>
-            <Link to="/onde-estamos" class={styles.link}>
+            <Link to="/onde-estamos">
               onde estamos
             </Link>
           </li>
           <li class={styles.item}>
-            <Link to="/fale-conosco" class={styles.link}>
+            <Link to="/fale-conosco">
               fale conosco
             </Link>
           </li>
@@ -43,15 +43,23 @@
       </nav>
     </section>
     <section class={styles['social-media']}>
-      <a href="https://pt-br.facebook.com/{config.facebook_page}/" target="_blank" rel="noreferrer">
-        <img src={FacebookIcon} alt="Facebook">
-      </a>
-      <a href="https://www.instagram.com/{config.instagram_profile}/" target="_blank" rel="noreferrer">
-        <img src={InstagramIcon} alt="Instagram">
-      </a>
-    <a href="https://www.youtube.com/channel/{config.youtube_channel}" target="_blank" rel="noreferrer">
-        <img src={YoutubeIcon} alt="Youtube">
-      </a>
+      {#if config.facebook_page}
+        <a href="https://pt-br.facebook.com/{config.facebook_page}/" target="_blank" rel="noreferrer" class={styles.link}>
+          <img src={FacebookIcon} alt="Facebook">
+        </a>
+      {/if}
+
+      {#if config.instagram_profile}
+        <a href="https://www.instagram.com/{config.instagram_profile}/" target="_blank" rel="noreferrer" class={styles.link}>
+          <img src={InstagramIcon} alt="Instagram">
+        </a>
+      {/if}
+
+      {#if config.youtube_channel}
+        <a href="https://www.youtube.com/channel/{config.youtube_channel}" target="_blank" rel="noreferrer" class={styles.link}>
+          <img src={YoutubeIcon} alt="Youtube">
+        </a>
+      {/if}
     </section>
   </div>
 </footer>
