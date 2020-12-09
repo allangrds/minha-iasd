@@ -1,33 +1,10 @@
 <script>
-  import { Router, Route } from 'svelte-routing'
-  import Home from '~/pages/Home/index.svelte'
-  import Live from './pages/Live/index.svelte'
-  import WhereWeAre from './pages/WhereWeAre/index.svelte'
-  import ContactUs from './pages/ContactUs/index.svelte'
-  import BoletimWhatsapp from './pages/BoletimWhatsapp/index.svelte'
-  import DizimosEOfertas from './pages/DizimosEOfertas/index.svelte'
+	import './index.css';
 
-  export let url = ''
+	export let name;
 </script>
 
-
-<Router url="{url}">
-  <Route path="/">
-    <Home />
-  </Route>
-  <Route path="/ao-vivo">
-    <Live />
-  </Route>
-  <Route path="/onde-estamos">
-    <WhereWeAre />
-  </Route>
-  <Route path="/fale-conosco">
-    <ContactUs />
-  </Route>
-  <Route path="/boletim/cadastro">
-    <BoletimWhatsapp />
-  </Route>
-  <Route path="/dizimos-e-ofertas">
-    <DizimosEOfertas />
-  </Route>
- </Router>
+<main>
+	<h1>Hello {name}!</h1>
+	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+</main>
