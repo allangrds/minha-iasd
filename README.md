@@ -10,6 +10,7 @@
 - [Páginas do projeto](#páginas-do-projeto)
 - [Parâmetros](#parâmetros)
 - [Como contribuir](#como-contribuir)
+- [Imagens](#imagens)
 
 ## Requisitos
 
@@ -82,3 +83,8 @@ Para mudar a imagem que fica no meio das páginas, substitua a imagem `src/asset
 1. Crie um fork deste projeto.
 1. Faça suas mudanças e crie os testes.
 1. Crie um pull request com uma boa descrição do que está sendo feito.
+
+## Imagens
+
+![Home 1](docs/assets/img/home_1.png)
+![Home 2](docs/assets/img/home_2.png)
