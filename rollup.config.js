@@ -5,6 +5,7 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
 import cssModules from 'svelte-preprocess-cssmodules';
+import postcss from 'rollup-plugin-postcss'
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -38,13 +39,21 @@ export default {
 		file: 'public/build/bundle.js'
 	},
 	plugins: [
+		postcss({
+			autoModules: false,
+			plugins: [
+				require('postcss-import'),
+				require('postcss-nested'),
+				require('postcss-preset-env'),
+			],
+		}),
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production
 			},
 			preprocess: [
-				cssModules(),
+				// cssModules(),
 			]
 		}),
 		// we'll extract any component CSS out into
