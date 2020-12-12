@@ -49,31 +49,31 @@ npm start
   - Informações bancárias da igreja
 
 ## Parâmetros
-Parâmetros presentes no arquivo `src/config.json` para dinamizar informações do site.
+Parâmetros presentes no arquivo `.env.example` - que deve ser renomeado para `.env` para fazer testes neste projeto - para dinamizar informações do site.
 
-- `youtube_live_embed_code`: Código para colocar o embed do Youtube no site.
-- `youtube_channel`: ID do canal no Youtube.
-- `facebook_page`: ID da página do Facebook.
-- `instagram_profile`: ID do perfil do Instagram.
-- `face_to_face_workship_register_url`: URL para cadastro do culto presencial.
-- `church_address`: Endereço da igreja.
-- `church_telephone`: Telefone de contato da igreja.
-- `church_email`: E-mail de contato da igreja.
-- `contact_form_formspree_id`: ID do serviço Formspree para receber os dados do formulário e enviar o email.
-- `church_google_maps_place_id`: ID do Google Maps para mostrar o lugar.
-- `church_google_maps_api_key`: API key do Google Maps.
-- `church_name`: Nome da igreja.
-- `tithe_bank_name`: Nome do banco(e código) para o depósito dos dízimos e ofertas.
-- `tithe_bank_agency`: Agência para o depósito dos dízimos e ofertas.
-- `tithe_bank_account`: Número da conta para o depósito dos dízimos e ofertas.
-- `tithe_bank_document_number`: CNPJ da igreja para o depósito dos dízimos e ofertas.
-- `tithe_email`: Email para enviar comprovante do dízimo ou oferta.
-- `tithe_whatsapp`: Whatsapp para enviar comprovante do dízimo ou oferta.
-- `informative_active`: Será mostrado a caixa para se cadastrar no informativo pelo Whatsapp? Se sim, `true`, se não, `false`.
-- `informative_whatsapp`: Telefone do Whatsapp para enviar a mensagem e começar a receber o informativo.
-- `cult_saturday_time`: Horário do culto de sábado.
-- `cult_sunday_time`: Horário do culto de quarta.
-- `cult_wednesday_time`: Horário do culto de domingo.
+- `YOUTUBE_LIVE_EMBED_CODE`: Código para colocar o embed do Youtube no site.
+- `YOUTUBE_CHANNEL`: ID do canal no Youtube.
+- `FACEBOOK_PAGE`: ID da página do Facebook.
+- `INSTAGRAM_PROFILE`: ID do perfil do Instagram.
+- `FACE_TO_FACE_WORKSHIP_REGISTER_URL`: URL para cadastro do culto presencial.
+- `CHURCH_ADDRESS`: Endereço da igreja.
+- `CHURCH_TELEPHONE`: Telefone de contato da igreja.
+- `CHURCH_EMAIL`: E-mail de contato da igreja.
+- `CONTACT_FORM_FORMSPREE_ID`: ID do serviço Formspree para receber os dados do formulário e enviar o email.
+- `CHURCH_GOOGLE_MAPS_PLACE_ID`: ID do Google Maps para mostrar o lugar.
+- `CHURCH_GOOGLE_MAPS_API_KEY`: API key do Google Maps.
+- `CHURCH_NAME`: Nome da igreja.
+- `TITHE_BANK_NAME`: Nome do banco(e código) para o depósito dos dízimos e ofertas.
+- `TITHE_BANK_AGENCY`: Agência para o depósito dos dízimos e ofertas.
+- `TITHE_BANK_ACCOUNT`: Número da conta para o depósito dos dízimos e ofertas.
+- `TITHE_BANK_DOCUMENT_NUMBER`: CNPJ da igreja para o depósito dos dízimos e ofertas.
+- `TITHE_EMAIL`: Email para enviar comprovante do dízimo ou oferta.
+- `TITHE_WHATSAPP`: Whatsapp para enviar comprovante do dízimo ou oferta.
+- `INFORMATIVE_ACTIVE`: Será mostrado a caixa para se cadastrar no informativo pelo Whatsapp? Se sim, `true`, se não, remova-o.
+- `INFORMATIVE_WHATSAPP`: Telefone do Whatsapp para enviar a mensagem e começar a receber o informativo.
+- `CULT_SATURDAY_TIME`: Horário do culto de sábado.
+- `CULT_SUNDAY_TIME`: Horário do culto de quarta.
+- `CULT_WEDNESDAY_TIME`: Horário do culto de domingo.
 
 Para mudar a imagem que fica no meio das páginas, substitua a imagem `src/assets/images/home_background.jpeg`.
 

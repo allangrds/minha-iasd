@@ -10,8 +10,6 @@
   import Footer from '~/components/Footer/index.svelte'
   import Title from '~/components/Title/index.svelte'
   import BoxInfo from '~/components/BoxInfo/index.svelte'
-
-  import config from '~/config'
 </script>
 
 <Wrapper>
@@ -24,7 +22,7 @@
         <div class={styles['card-list']}>
           <BoxInfo
             title="Endereço"
-            description={config.church_address}
+            description={process.env.CHURCH_ADDRESS}
           />
         </div>
         <iframe
@@ -33,7 +31,7 @@
           height="450"
           frameborder="0"
           style="border: 0;"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:{config.church_google_maps_place_id}&key={config.church_google_maps_api_key}"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:{process.env.CHURCH_GOOGLE_MAPS_PLACE_ID}&key={process.env.CHURCH_GOOGLE_MAPS_API_KEY}"
           allowfullscreen />
       </Container>
       <Footer />

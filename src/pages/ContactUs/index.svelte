@@ -13,8 +13,6 @@
   import Input from '~/components/Input/index.svelte'
   import Textarea from '~/components/Textarea/index.svelte'
   import Button from '~/components/Button/index.svelte'
-
-  import config from '~/config'
 </script>
 
 <Wrapper>
@@ -27,18 +25,18 @@
         <div class={styles['card-list']}>
           <BoxInfo
             title="WhatsApp"
-            description={config.church_telephone}
+            description={process.env.CHURCH_TELEPHONE}
           />
-          {#if config.church_email}
+          {#if process.env.CHURCH_EMAIL}
             <BoxInfo
               title="E-mail"
-              description={config.church_email}
+              description={process.env.CHURCH_EMAIL}
             />
           {/if}
         </div>
         <form
           class={styles.form}
-          action="https://formspree.io/f/{config.contact_form_formspree_id}"
+          action="https://formspree.io/f/{process.env.CONTACT_FORM_FORMSPREE_ID}"
           method="POST"
         >
           <Input
