@@ -7,8 +7,6 @@
   import InstagramIcon from '~/assets/images/instagram.svg'
   import YoutubeIcon from '~/assets/images/youtube.svg'
   import IasdLogoIcon from '~/assets/images/iasd-logo-oficial.svg'
-
-  import config from '~/config'
 </script>
 
 <footer class={styles.footer}>
@@ -22,7 +20,7 @@
               início
             </Link>
           </li>
-          {#if config.youtube_live_embed_code}
+          {#if process.env.YOUTUBE_LIVE_EMBED_CODE}
             <li class={styles.item}>
               <Link to="/ao-vivo">
                 ao vivo
@@ -43,20 +41,20 @@
       </nav>
     </section>
     <section class={styles['social-media']}>
-      {#if config.facebook_page}
-        <a href="https://pt-br.facebook.com/{config.facebook_page}/" target="_blank" rel="noreferrer" class={styles.link}>
+      {#if process.env.FACEBOOK_PAGE}
+        <a href="https://pt-br.facebook.com/{process.env.FACEBOOK_PAGE}/" target="_blank" rel="noreferrer" class={styles.link}>
           <img src={FacebookIcon} alt="Facebook">
         </a>
       {/if}
 
-      {#if config.instagram_profile}
-        <a href="https://www.instagram.com/{config.instagram_profile}/" target="_blank" rel="noreferrer" class={styles.link}>
+      {#if process.env.INSTAGRAM_PROFILE}
+        <a href="https://www.instagram.com/{process.env.INSTAGRAM_PROFILE}/" target="_blank" rel="noreferrer" class={styles.link}>
           <img src={InstagramIcon} alt="Instagram">
         </a>
       {/if}
 
-      {#if config.youtube_channel}
-        <a href="https://www.youtube.com/channel/{config.youtube_channel}" target="_blank" rel="noreferrer" class={styles.link}>
+      {#if process.env.YOUTUBE_CHANNEL}
+        <a href="https://www.youtube.com/channel/{process.env.YOUTUBE_CHANNEL}" target="_blank" rel="noreferrer" class={styles.link}>
           <img src={YoutubeIcon} alt="Youtube">
         </a>
       {/if}

@@ -2,9 +2,7 @@
   import { Link } from 'svelte-routing'
 
   import styles from './style.css'
-  import config from '~/config'
 </script>
-
 
 <header class={styles.header}>
   <div class={styles.container}>
@@ -13,7 +11,7 @@
         Igreja Adventista do Sétimo Dia
       </h1>
       <h2 class={styles['church-name-sub']}>
-        {config.church_name}
+        {process.env.CHURCH_NAME}
       </h2>
     </div>
     <div class={styles['mobile-navigation']}>
@@ -71,7 +69,7 @@
                 início
               </Link>
             </li>
-            {#if config.youtube_live_embed_code}
+            {#if process.env.YOUTUBE_LIVE_EMBED_CODE}
               <li class={styles.item}>
                 <Link to="/ao-vivo" class={styles.link}>
                   ao vivo
@@ -134,7 +132,7 @@
               Início
             </Link>
           </li>
-          {#if config.youtube_live_embed_code}
+          {#if process.env.YOUTUBE_LIVE_EMBED_CODE}
             <li class={styles.item}>
               <Link to="/ao-vivo" class={styles.link}>
                 Ao vivo

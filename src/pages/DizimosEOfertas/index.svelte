@@ -11,8 +11,6 @@
   import Title from '~/components/Title/index.svelte'
   import Text from '~/components/Text/index.svelte'
   import BoxInfo from '~/components/BoxInfo/index.svelte'
-
-  import config from '~/config'
 </script>
 
 <Wrapper>
@@ -33,41 +31,41 @@
             }}
           />
 
-          {#if config.tithe_bank_name}
+          {#if process.env.TITHE_BANK_NAME}
             <BoxInfo
               title="Dados bancários"
             >
               <p>
-                <b>Banco</b>: {config.tithe_bank_name}
+                <b>Banco</b>: {process.env.TITHE_BANK_NAME}
               </p>
 
               <p>
-                <b>Agência</b>: {config.tithe_bank_agency}
+                <b>Agência</b>: {process.env.TITHE_BANK_AGENCY}
               </p>
 
               <p>
-                <b>Conta</b>: {config.tithe_bank_account}
+                <b>Conta</b>: {process.env.TITHE_BANK_ACCOUNT}
               </p>
 
               <p>
-                <b>CNPJ</b>: {config.tithe_bank_document_number}
+                <b>CNPJ</b>: {process.env.TITHE_BANK_DOCUMENT_NUMBER}
               </p>
             </BoxInfo>
           {/if}
         </div>
-        {#if config.tithe_email || config.tithe_whatsapp}
+        {#if process.env.TITHE_EMAIL || process.env.TITHE_WHATSAPP}
           <Text>
             Quando você ofertar ou dizimar fazendo um depósito ou transferência, mande uma mensagem para <b>Edgard Jordão</b> identificando os valores.
           </Text>
         {/if}
-        {#if config.tithe_email}
+        {#if process.env.TITHE_EMAIL}
           <Text>
             <b>E-mail</b>: jordaoiasd@gmail.com
           </Text>
         {/if}
-        {#if config.tithe_whatsapp}
+        {#if process.env.TITHE_WHATSAPP}
           <Text>
-            <b>Whatsapp</b>: {config.tithe_whatsapp}
+            <b>Whatsapp</b>: {process.env.TITHE_WHATSAPP}
           </Text>
         {/if}
       </Container>

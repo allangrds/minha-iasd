@@ -15,8 +15,6 @@
   import PrayIcon from '~/assets/images/home-pray.svg'
   import LocationIcon from '~/assets/images/home-location.svg'
   import LiveIcon from '~/assets/images/home-live.svg'
-
-  import config from '~/config'
 </script>
 
 <Wrapper>
@@ -26,7 +24,7 @@
       <div class={styles['header-img']}></div>
       <Container>
         <section class={styles['card-list']}>
-          {#if config.youtube_live_embed_code}
+          {#if process.env.YOUTUBE_LIVE_EMBED_CODE}
             <BoxInfo
               title="Culto ao vivo"
               description="Veja nosso culto direto da sua casa"
@@ -41,7 +39,7 @@
               }}
             />
           {/if}
-          {#if config.face_to_face_workship_register_url}
+          {#if process.env.FACE_TO_FACE_WORKSHIP_REGISTER_URL}
             <BoxInfo
               title="Culto presencial"
               description="Preencha nosso formulário de inscrição e venha nos visitar"
@@ -51,12 +49,12 @@
               }}
               link={{
                 type: 'external',
-                url: config.face_to_face_workship_register_url,
+                url: process.env.FACE_TO_FACE_WORKSHIP_REGISTER_URL,
                 text: 'ver mais',
               }}
             />
           {/if}
-          {#if config.informative_active}
+          {#if process.env.INFORMATIVE_ACTIVE}
             <BoxInfo
               title="Informativo"
               description="Fique por dentro do que está acontecendo na igreja"
@@ -89,15 +87,15 @@
         <section class={styles['card-list']}>
           <BoxInfo
             title="Sábado"
-            description={config.cult_saturday_time}
+            description={process.env.CULT_SATURDAY_TIME}
           />
           <BoxInfo
             title="Domingo"
-            description={config.cult_sunday_time}
+            description={process.env.CULT_SUNDAY_TIME}
           />
           <BoxInfo
             title="Quarta"
-            description={config.cult_wednesday_time}
+            description={process.env.CULT_WEDNESDAY_TIME}
           />
         </section>
       </Container>
