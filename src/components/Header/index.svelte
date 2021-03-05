@@ -77,6 +77,11 @@
               </li>
             {/if}
             <li class={styles.item}>
+              <Link to="/classe-biblica" class={styles.link}>
+                Classe bíblica
+              </Link>
+            </li>
+            <li class={styles.item}>
               <Link to="/onde-estamos" class={styles.link}>
                 onde estamos
               </Link>
@@ -139,6 +144,11 @@
               </Link>
             </li>
           {/if}
+          <li class={styles.item}>
+            <Link to="/classe-biblica" class={styles.link}>
+              Classe bíblica
+            </Link>
+          </li>
           <li class={styles.item}>
             <Link to="/onde-estamos" class={styles.link}>
               Onde estamos
