@@ -2,6 +2,7 @@
   import { Router, Route } from 'svelte-routing'
   import Home from '~/pages/Home/index.svelte'
   import Live from './pages/Live/index.svelte'
+  import ClasseBiblica from './pages/ClasseBiblica/index.svelte'
   import WhereWeAre from './pages/WhereWeAre/index.svelte'
   import ContactUs from './pages/ContactUs/index.svelte'
   import BoletimWhatsapp from './pages/BoletimWhatsapp/index.svelte'
@@ -17,6 +18,9 @@
   </Route>
   <Route path="/ao-vivo">
     <Live />
+  </Route>
+  <Route path="/classe-biblica">
+    <ClasseBiblica />
   </Route>
   <Route path="/onde-estamos">
     <WhereWeAre />
