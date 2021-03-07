@@ -47,7 +47,7 @@
           title="Anúncio da classe bíblica"
           width="100%"
           height="700"
-          src="https://www.youtube.com/embed/b7N6AewXv-o"
+          src="https://www.youtube.com/embed/lPsJIwfEsbo"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen />
